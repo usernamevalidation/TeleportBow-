@@ -1,5 +1,5 @@
 # Enable verbose debug logging. Set to true to troubleshoot.
-debug: true
+debug: false
 
 # Cooldown between teleports, in seconds. Supports decimals (e.g. 0.5).
 # Set to 0 to disable.
@@ -14,10 +14,10 @@ open-air-requirement: 30
 search-radius: 2
 
 # How many blocks vertically at the candidate must be passable (feet + head).
-minimum-air-blocks-vertical: 2
+minimum-air-blocks-vertical: 3
 
 # How many of the 4 adjacent columns (N/S/E/W) must also be passable.
-minimum-air-blocks-horizontal: 2
+minimum-air-blocks-horizontal: 3
 
 # Maximum distance the arrow can land from the player.
 # Set to -1 to disable the limit.
@@ -29,7 +29,6 @@ maximum-distance: -1
 passable-name-patterns:
   - "_SLAB"
   - "_BUTTON"
-  - "_LEVER"
   - "_SIGN"
   - "_WALL_SIGN"
   - "_HANGING_SIGN"
