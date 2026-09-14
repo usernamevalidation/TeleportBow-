@@ -52,7 +52,7 @@ If nothing passes, the teleport is cancelled.
 The "30 blocks in one direction" rule prevents teleporting inside a 
 building or under a low ceiling.
 
-## Building
+## Requirements
 
 - Paper/Purpur/Spigot 1.21.8+
 - Java 21
