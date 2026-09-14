@@ -1,0 +1,114 @@
+# Enable verbose debug logging. Set to true to troubleshoot.
+debug: true
+
+# Cooldown between teleports, in seconds. Supports decimals (e.g. 0.5).
+# Set to 0 to disable.
+teleport-cooldown: 0.75
+
+# How many contiguous passable blocks must exist in at least one direction
+# from the landing spot for it to be considered "open" (not inside a structure).
+open-air-requirement: 30
+
+# Radius of the search cube around the arrow landing spot.
+# 1 = 3x3x3 = 27 spots, 2 = 5x5x5 = 125 spots
+search-radius: 2
+
+# How many blocks vertically at the candidate must be passable (feet + head).
+minimum-air-blocks-vertical: 2
+
+# How many of the 4 adjacent columns (N/S/E/W) must also be passable.
+minimum-air-blocks-horizontal: 2
+
+# Maximum distance the arrow can land from the player.
+# Set to -1 to disable the limit.
+maximum-distance: -1
+
+# Any material whose name contains one of these substrings is treated as
+# passable, even if it isn't listed in safe-blocks. Useful for auto-matching
+# all slab/stair/button/etc. variants without listing each one.
+passable-name-patterns:
+  - "_SLAB"
+  - "_BUTTON"
+  - "_LEVER"
+  - "_SIGN"
+  - "_WALL_SIGN"
+  - "_HANGING_SIGN"
+  - "_PRESSURE_PLATE"
+  - "_CARPET"
+  - "_TORCH"
+  - "_RAIL"
+  - "_FENCE"
+  - "_FENCE_GATE"
+  - "_DOOR"
+  - "_TRAPDOOR"
+  - "_BANNER"
+  
+# Blocks that are considered safe to land in or near.
+safe-blocks:
+  - AIR
+  - CAVE_AIR
+  - VOID_AIR
+  - GRASS_BLOCK
+  - SHORT_GRASS
+  - TALL_GRASS
+  - FERN
+  - LARGE_FERN
+  - DANDELION
+  - POPPY
+  - BLUE_ORCHID
+  - ALLIUM
+  - AZURE_BLUET
+  - RED_TULIP
+  - ORANGE_TULIP
+  - WHITE_TULIP
+  - PINK_TULIP
+  - OXEYE_DAISY
+  - CORNFLOWER
+  - LILY_OF_THE_VALLEY
+  - SUNFLOWER
+  - LILAC
+  - ROSE_BUSH
+  - PEONY
+  - TORCH
+  - WALL_TORCH
+  - SOUL_TORCH
+  - SOUL_WALL_TORCH
+  - REDSTONE_TORCH
+  - REDSTONE_WALL_TORCH
+  - OAK_SIGN
+  - SPRUCE_SIGN
+  - BIRCH_SIGN
+  - JUNGLE_SIGN
+  - ACACIA_SIGN
+  - DARK_OAK_SIGN
+  - OAK_BUTTON
+  - SPRUCE_BUTTON
+  - BIRCH_BUTTON
+  - JUNGLE_BUTTON
+  - ACACIA_BUTTON
+  - DARK_OAK_BUTTON
+  - RAIL
+  - POWERED_RAIL
+  - DETECTOR_RAIL
+  - ACTIVATOR_RAIL
+  - END_ROD
+
+# Blocks that are ALWAYS unsafe, regardless of other checks.
+unsafe-blocks:
+  - LAVA
+  - FIRE
+  - SOUL_FIRE
+  - MAGMA_BLOCK
+  - CACTUS
+  - SWEET_BERRY_BUSH
+  - COBWEB
+  - POWDER_SNOW
+  - NETHER_PORTAL
+  - END_PORTAL
+  - END_GATEWAY
+  - BEDROCK
+  - BARRIER
+  - COMMAND_BLOCK
+  - STRUCTURE_VOID
+  - STRUCTURE_BLOCK
+  - LIGHT
