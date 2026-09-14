@@ -1,3 +1,10 @@
+## About this project
+
+Built with AI assistance. It works for my use case, but it's not battle-tested on every setup.
+
+Found a bug? Want to improve it? Fork it, patch it, PR it. Contributions welcome.
+Download, use, or share however you like.
+
 # TeleportBow
 
 A Minecraft plugin that teleports you where your arrow lands — with safety checks.
