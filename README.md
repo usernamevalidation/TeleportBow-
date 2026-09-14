@@ -39,7 +39,8 @@ A Minecraft plugin that teleports you where your arrow lands — with safety che
 | `teleportbow.reload` | op | Allows reloading the config |
 
 ## Configuration
-see src/main/resources/config.yml for the full commented reference
+
+See [`src/main/resources/config.yml`](src/main/resources/config.yml) for the full commented reference.
 
 ## How it works
 
